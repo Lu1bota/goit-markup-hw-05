@@ -730,6 +730,7 @@ fieldset {
     margin-bottom: 4px;
 }
 
+
 .container-form-input {
     position: relative;
 }
@@ -740,10 +741,24 @@ fieldset {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 40px;
+    outline: none;
 
     position: absolute;
+    
+}
+
+.form-input:focus {
+    border: 1px solid #4d5ae5;
+}
+
+.form-input:focus + .form-input-icon {
+    fill: #4d5ae5;
 }
 
 .form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(50%);
     fill: #2E2F42;
 }
